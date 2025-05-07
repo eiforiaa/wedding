@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Татьяна и Владислав - Приглашение на свадьбу</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #d4a373;
+            --secondary: #fefae0;
+            --text: #5a3e36;
+            --light: #fff9f9;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--light);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .header {
+            padding: 40px 0;
+        }
+        .names {
+            font-size: 3.5em;
+            margin: 20px 0;
+            color: var(--primary);
+            font-weight: 700;
+        }
+        .date {
+            font-size: 1.8em;
+            margin: 30px 0;
+        }
+        .place {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .address {
+            font-size: 1.1em;
+            margin: 20px 0;
+            color: var(--text);
+            opacity: 0.8;
+        }
+        .photo {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.05);
+        }
+        .form-container {
+            margin: 50px 0;
+            padding: 20px;
+            background: var(--secondary);
+            border-radius: 10px;
+        }
+        .program {
+            margin: 50px 0;
+            text-align: left;
+        }
+        .program-item {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .program-time {
+            font-weight: bold;
+            min-width: 80px;
+            color: var(--primary);
+        }
+        .program-description {
+            flex: 1;
+            padding-left: 20px;
+            border-left: 2px solid var(--primary);
+        }
+        .map-container {
+            margin: 40px 0;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .note {
+            font-style: italic;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: rgba(212, 163, 115, 0.1);
+            border-radius: 8px;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #999;
+        }
+        @media (max-width: 600px) {
+            .names { font-size: 2.5em; }
+            .program-item { flex-direction: column; align-items: flex-start; }
+            .program-time { margin-bottom: 5px; }
+            .program-description { padding-left: 0; border-left: none; padding-top: 5px; border-top: 2px solid var(--primary); }
+            .map-container { height: 300px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Приглашаем вас на нашу свадьбу</h1>
+            <div class="names">Татьяна & Владислав</div>
+            <div class="date">16 августа 2025 года</div>
+            <div class="place">Отель "Альфа Измайлово"</div>
+            <div class="address">Измайловское шоссе, 71, корпус А, Москва</div>
+            <div class="note">
+                Ждём вас 16 августа в 15:00 на нашем празднике!<br>
+                Официальная роспись пройдёт в узком кругу, а затем мы всех ждём на фуршете!
+            </div>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Татьяна и Владислав" class="photo">
+
+        <div class="program">
+            <h2>Программа дня</h2>
+            <div class="program-item">
+                <div class="program-time">12:00</div>
+                <div class="program-description">Жених и Невеста готовятся</div>
+            </div>
+            <div class="program-item">
+                <div class="program-time">13:30</div>
+                <div class="program-description">Официальная роспись</div>
+            </div>
+            <div class="program-item">
+                <div class="program-time">15:00</div>
+                <div class="program-description">Сбор гостей, фуршет</div>
+            </div>
+            <div class="program-item">
+                <div class="program-time">16:30</div>
+                <div class="program-description">Начало банкета</div>
+            </div>
+            <div class="program-item">
+                <div class="program-time">17:30</div>
+                <div class="program-description">Первый танец молодых</div>
+            </div>
+            <div class="program-item">
+                <div class="program-time">19:00</div>
+                <div class="program-description">Подача горячих блюд</div>
+            </div>
+            <div class="program-item">
+                <div class="program-time">20:30</div>
+                <div class="program-description">Свободное время, танцы</div>
+            </div>
+            <div class="program-item">
+                <div class="program-time">22:00</div>
+                <div class="program-description">Свадебный торт</div>
+            </div>
+            <div class="program-item">
+                <div class="program-time">23:00</div>
+                <div class="program-description">Запуск фонариков</div>
+            </div>
+        </div>
+
+        <a href="#rsvp" class="button">Подтвердить присутствие</a>
+
+        <div class="form-container" id="rsvp">
+            <h2>Подтвердите ваше присутствие</h2>
+            <!-- Вставьте ваш Google Form ID вместо YOUR_FORM_ID -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9kWzGrZReZ3ErpYzDZVE1RimdaLlmPBIJ2fEUEgnT89MO-A/viewform?usp=dialog" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+        </div>
+
+        <div class="map-container">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acc1c414ff2c73f5ba1a8d4eff17fbd8bce479e5544a657c7d169c397327a233d&amp;source=constructor" width="500" height="494" frameborder="0"></iframe>
+        </div>
+
+        <footer>
+            С любовью, Татьяна и Владислав<br>
+            Контакты: +7 (XXX) XXX-XX-XX
+        </footer>
+    </div>
+</body>
+</html>
