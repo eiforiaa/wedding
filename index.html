@@ -1,5 +1,3 @@
-Сайт2
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -23,9 +21,10 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            font-size: 18px;
         }
         .container {
-            max-width: 650px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             text-align: center;
@@ -34,21 +33,37 @@
             font-family: 'Cormorant Garamond', serif;
             font-weight: 600;
         }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
         .elegant {
             font-family: 'Cormorant Garamond', serif;
             font-style: italic;
             font-weight: 500;
         }
+        .header {
+            padding: 20px 0;
+        }
         .couple-names {
             font-family: 'Cormorant Garamond', serif;
             font-style: italic;
             font-weight: 600;
-            font-size: 2.5em;
+            font-size: 3.5em;
             color: var(--primary);
-            margin-bottom: 15px;
+            margin: 20px 0;
+        }
+        .date {
+            font-size: 2em;
+            margin: 30px 0;
         }
         .scroll-hint {
-            margin: 20px 0;
+            margin: 10px 0 5px 0;
             color: rgba(90, 62, 54, 0.7);
             font-size: 0.9em;
             display: flex;
@@ -65,233 +80,204 @@
             40% {transform: translateY(-5px);}
             60% {transform: translateY(-3px);}
         }
-        .header {
-            padding: 20px 0;
-        }
-        .names {
-            font-family: 'Cormorant Garamond', serif;
-            font-style: italic;
-            font-weight: 600;
-            font-size: 2.5em;
-            color: var(--primary);
-            margin: 15px 0;
-        }
-        .photo {
-            max-width: 100%;
-            border-radius: 8px;
-            margin: 25px 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
         .note {
             margin: 30px 0;
-            padding: 25px;
+            padding: 30px;
             background-color: rgba(212, 163, 115, 0.08);
             border-radius: 16px;
             border: 1px solid rgba(212, 163, 115, 0.2);
+            font-size: 1.1em;
+        }
+        .ceremony-note {
+            margin-top: 25px;
+            line-height: 1.6;
+        }
+        .ceremony-note .banquet-text {
+            font-size: 1.3em;
+            color: var(--text);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .ceremony-note .ceremony-text {
+            font-size: 0.95em;
+            color: rgba(90, 62, 54, 0.7);
+            margin-top: 10px;
+        }
+        .photo {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 40px 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         .button {
             display: inline-block;
-            padding: 12px 28px;
+            padding: 18px 36px;
             background: var(--primary);
             color: white;
             text-decoration: none;
             border-radius: 50px;
-            font-size: 1em;
-            margin: 25px 0;
-            transition: all 0.3s;
+            font-size: 1.3em;
+            margin: 30px 0;
+            transition: transform 0.3s;
             box-shadow: 0 4px 8px rgba(212, 163, 115, 0.3);
-            border: none;
-            cursor: pointer;
             font-family: 'Cormorant Garamond', serif;
             font-weight: 500;
         }
         .button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(212, 163, 115, 0.4);
+            transform: scale(1.05);
         }
         .program {
-            margin: 40px 0;
+            margin: 60px 0;
             text-align: left;
         }
         .program-item {
             display: flex;
-            margin-bottom: 16px;
+            margin-bottom: 25px;
             align-items: center;
         }
         .program-time {
             font-weight: bold;
-            min-width: 70px;
+            min-width: 90px;
             color: var(--primary);
             font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3em;
         }
         .program-description {
             flex: 1;
-            padding-left: 16px;
-            border-left: 1px solid var(--primary);
+            padding-left: 25px;
+            border-left: 2px solid var(--primary);
+            font-size: 1.2em;
         }
         .section-box {
-            margin: 45px 0;
-            padding: 25px;
+            margin: 50px 0;
+            padding: 30px;
             background-color: rgba(212, 163, 115, 0.08);
             border-radius: 16px;
             border: 1px solid rgba(212, 163, 115, 0.2);
+            font-size: 1.1em;
         }
-	.section-box h2.elegant{
+        .section-box h2 {
+            font-size: 2em;
             margin-top: 0;
-            
+            color: var(--text);
         }
         .divider {
-            width: 100px;
+            width: 150px;
             height: 1px;
             background: var(--primary);
-            margin: 40px auto;
+            margin: 50px auto;
             opacity: 0.3;
         }
         .map-container {
-            margin: 40px 0;
-            height: 400px;
+            margin: 50px 0;
+            height: 450px;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         .decorative-elements {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
+            gap: 20px;
+            margin: 30px 0;
             flex-wrap: wrap;
         }
         .decor-element {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             background-color: rgba(212, 163, 115, 0.2);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
+            font-size: 24px;
             color: var(--primary);
         }
+        .contacts {
+            text-align: center;
+        }
+        .contact-list {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 550px;
+            font-size: 1.1em;
+        }
+        .contact-item {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            align-items: baseline;
+            margin: 15px 0;
+            gap: 10px;
+        }
+        .contact-name {
+            font-weight: bold;
+            font-family: 'Cormorant Garamond', serif;
+            text-align: left;
+            min-width: 120px;
+        }
+        .contact-role {
+            color: rgba(90, 62, 54, 0.6);
+            font-size: 0.95em;
+            min-width: 180px;
+        }
+        .contact-phone {
+            font-family: monospace;
+            letter-spacing: 0.5px;
+            text-align: left;
+            white-space: nowrap;
+        }
         footer {
-            margin-top: 60px;
-            padding: 30px 0;
+            margin-top: 70px;
+            padding: 40px 0;
+        }
+        .footer-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            color: rgba(90, 62, 54, 0.8);
+            margin: 10px 0;
+        }
+        .footer-text:first-child {
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+        .footer-text:last-child {
+            font-size: 1em;
+            font-weight: 400;
         }
         @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
             .container {
                 padding: 15px;
-                max-width: 90%;
             }
             .couple-names {
-                font-size: 1.5em;
+                font-size: 2.8em;
             }
-            .names {
-                font-size: 2.2em;
-            }
-            .note, .section-box {
-                padding: 20px;
-                border-radius: 12px;
+            .program-item {
+                flex-direction: column;
+                align-items: flex-start;
             }
             .program-time {
-                min-width: 60px;
+                margin-bottom: 8px;
+                min-width: 80px;
             }
-        }
-        @media (max-width: 480px) {
-            .container {
-                max-width: 95%;
-            }
-            .couple-names {
-                font-size: 1.3em;
-            }
-            .names {
-                font-size: 1.8em;
-            }
-            .button {
-                padding: 10px 22px;
-                font-size: 0.9em;
+            .program-description {
+                padding-left: 0;
+                border-left: none;
+                padding-top: 8px;
+                border-top: 2px solid var(--primary);
             }
             .map-container {
-                height: 300px;
+                height: 350px;
+            }
+            .contact-item {
+                grid-template-columns: 1fr;
+                gap: 3px;
             }
         }
-.decor-element {width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    margin: 5px;
-}
- .section-box p {
-        margin: 0;
-        line-height: 1.5;
-    }
-
- .note p {
-	margin: 0;
-	 }   
-.contacts {
-    text-align: center;
-}
-
-.contact-list {
-    display: inline-block;
-    text-align: left;
-    margin-top: 15px;
-    width: 100%;
-    max-width: 500px;
-}
-
-.contact-item {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: baseline;
-    margin: 10px 0;
-    gap: 8px;
-}
-
-.contact-name {
-    font-weight: bold;
-    font-family: 'Cormorant Garamond', serif;
-    text-align: left;
-    min-width: 100px;
-}
-
-.contact-role {
-    color: rgba(90, 62, 54, 0.6);
-    font-size: 0.9em;
-    min-width: 150px;
-}
-
-.contact-phone {
-    font-family: monospace;
-    letter-spacing: 0.5px;
-    text-align: left;
-    white-space: nowrap;
-}
-.ceremony-note {
-    margin-top: 20px;
-    font-size: 0.95em;
-    line-height: 1.6;
-}
-
-.ceremony-note p {
-    margin: 8px 0;
-    padding-left: 0;
-}
-
-
-
-.important-notes {
-    background-color: rgba(212, 163, 115, 0.05);
-    border: 1px dashed rgba(212, 163, 115, 0.3);
-}
-
-.important-notes h3 {
-    color: var(--primary);
-    margin-top: 0;
-}
-
     </style>
 </head>
 <body>
@@ -300,29 +286,26 @@
             <div>Листайте вниз</div>
             <div class="scroll-arrow">↓</div>
         </div>
-	
 
-	<div class="header">
-    <div class="couple-names">Владислав & Татьяна</div>
-    
-    <h2 class="elegant">Дорогие родные и близкие!</h2>
-    
-    <div class="note">
-        <p>Вы получили эту ссылку, а значит мы спешим вам сообщить важную новость:</p>
-        <div class="names">Мы женимся!</div>
-        
-        <div class="ceremony-note">
-            <p>📜 Официальная роспись пройдёт в узком кругу (родители и свидетели).</p>
-            <p>🍾 Ждём всех гостей к началу банкета в 16:30!</p>
+        <div class="header">
+            <h1>Приглашаем вас на нашу свадьбу</h1>
+            <div class="couple-names">Владислав & Татьяна</div>
+            <div class="date">23 августа 2025 года</div>
+            
+            <div class="note">
+                <h2 class="elegant">Дорогие родные и близкие!</h2>
+                <div class="ceremony-note">
+                    <p class="banquet-text">Ждём всех гостей к началу банкета в 16:30!</p>
+                    <p class="ceremony-text">Официальная роспись пройдёт в узком кругу (родители и свидетели).</p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
         <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Татьяна и Владислав" class="photo">
 
         <div class="note">
             <h3>МЕСТО ПРОВЕДЕНИЯ</h3>
-            <p>Ждём вас 23 августа 2025 года в 15:00</p>
+            <p>Ждём вас 23 августа в 16:30</p>
             <p>Отель "Альфа Измайлово"</p>
             <p>Измайловское шоссе, 71, корпус А, Москва</p>
         </div>
@@ -371,14 +354,14 @@
 
         <div class="section-box">
             <h2>Дресс-код</h2>
-            <p>Выбирайте любые цвета, кроме белого - ведь в белом будет невеста!</p>
-            <p>Мы будем рады, если вы поддержите нашу цветовую гамму: пастельные и натуральные оттенки.</p>
+            <p>Белый цвет мы оставляем исключительно для невесты. Для гостей женского пола просим выбрать наряды других оттенков. Мужчины могут выбрать классические белые рубашки.</p>
+            <p>Будем рады, если вы поддержите нашу цветовую гамму: пастельные и натуральные оттенки.</p>
             
             <div class="decorative-elements">
-                <div class="decor-element" style="background-color: #FFD1DC; color: 		#D4A373;">❤</div>
-                <div class="decor-element"style="background-color: #B5EAD7; color: #D4A373;">✿</div>
-                <div class="decor-element"style="background-color: #FFE5B4; color: #D4A373;">❁</div>
-                <div class="decor-element"style="background-color: #C7CEEA; color: #D4A373;">✽</div>
+                <div class="decor-element" style="background-color: #FFD1DC; color: #D4A373;">❤</div>
+                <div class="decor-element" style="background-color: #B5EAD7; color: #D4A373;">✿</div>
+                <div class="decor-element" style="background-color: #FFE5B4; color: #D4A373;">❁</div>
+                <div class="decor-element" style="background-color: #C7CEEA; color: #D4A373;">✽</div>
             </div>
         </div>
 
@@ -390,56 +373,45 @@
             <p>Он точно поможет воплотить мечту в реальность.</p>
         </div>
 
-<div class="section-box important-notes">
-    <h3>Несколько важных моментов</h3>
-    <p>Мы тщательно готовим этот особенный день и будем рады видеть именно вас!</p>
-    <p>Так как мы хотим разделить этот момент только с самыми близкими людьми, 
-    приглашение рассчитано только на указанного гостя.</p>
-    <p>Заранее благодарим за понимание!</p>
-</div>
-
         <div class="form-container" id="rsvp">
             <h2>Подтвердите ваше присутствие</h2>
-            <!-- Вставьте ваш Google Form ID вместо YOUR_FORM_ID -->
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9kWzGrZReZ3ErpYzDZVE1RimdaLlmPBIJ2fEUEgnT89MO-A/viewform?usp=dialog" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
         </div>
 
+        <div class="divider"></div>
 
-      <div class="map-container">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acc1c414ff2c73f5ba1a8d4eff17fbd8bce479e5544a657c7d169c397327a233d&amp;source=constructor" width="500" height="494" frameborder="0"></iframe>
+        <div class="map-container" id="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acc1c414ff2c73f5ba1a8d4eff17fbd8bce479e5544a657c7d169c397327a233d&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
         </div>
 
-        
-
-
-
-<div class="section-box contacts">
-    <h2>Контакты</h2>
-    <p>По всем вопросам организации:</p>
-    
-    <div class="contact-list">
-        <div class="contact-item">
-            <span class="contact-name">Наталья</span>
-            <span class="contact-role">(мама невесты, организатор)</span>
-            <span class="contact-phone">+7 (XXX) XXX-XX-XX</span>
+        <div class="section-box contacts">
+            <h2>Контакты</h2>
+            <p>По всем вопросам организации:</p>
+            
+            <div class="contact-list">
+                <div class="contact-item">
+                    <span class="contact-name">Наталья</span>
+                    <span class="contact-role">(мама невесты, организатор)</span>
+                    <span class="contact-phone">+7 (926) 369-78-XX</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-name">Татьяна</span>
+                    <span class="contact-role">(невеста)</span>
+                    <span class="contact-phone">+7 (977) 916-12-XX</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-name">Владислав</span>
+                    <span class="contact-role">(жених)</span>
+                    <span class="contact-phone">+7 (909) 922-22-XX</span>
+                </div>
+            </div>
         </div>
-        
-        <div class="contact-item">
-            <span class="contact-name">Татьяна</span>
-            <span class="contact-role">(невеста)</span>
-            <span class="contact-phone">+7 (XXX) XXX-XX-XX</span>
-        </div>
-        
-        <div class="contact-item">
-            <span class="contact-name">Владислав</span>
-            <span class="contact-role">(жених)</span>
-            <span class="contact-phone">+7 (XXX) XXX-XX-XX</span>
-        </div>
-    </div>
-</div>
 
         <footer>
-            <h2 class="elegant">С нетерпением ждём встречи!</h2>
+            <div class="footer-text">С нетерпением ждём встречи!</div>
+            <div class="footer-text">С любовью, Татьяна и Владислав</div>
         </footer>
     </div>
 </body>
