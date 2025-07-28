@@ -310,6 +310,26 @@
 .form-note p {
     margin: 8px 0;
 }
+
+/* Адаптивная форма */
+.form-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.form-wrapper iframe {
+    width: calc(100% - 20px);
+    height: 700px;
+    margin: 0 10px;
+    border: none;
+}
+
+
+
+
         }
     </style>
 </head>
@@ -328,13 +348,16 @@
             <div class="note">
                 <h2 class="elegant">Дорогие родные и близкие!</h2>
                 <div class="ceremony-note">
+		<p class="banquet-text">Один день в этом году станет для нас особенно важным, и мы хотим провести его в кругу близких и друзей! С большим удовольствием приглашаем вас на нашу свадьбу!</p>
                     <p class="banquet-text">Ждём всех гостей к началу фуршета в 15:30</p>
                     <p class="ceremony-text">Официальная роспись пройдёт в узком кругу (родители и свидетели).</p>
                 </div>
             </div>
         </div>
 
-        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Татьяна и Владислав" class="photo">
+        <img src="wedd_file/wedd_photo1.jpg" alt="Татьяна и Владислав" class="photo">
+
+<div class="divider"></div>
 
         <div class="note">
             <h3>МЕСТО ПРОВЕДЕНИЯ</h3>
@@ -348,7 +371,7 @@
 <a href="#map" class="button">Перейти на карту</a>
         </div>
 
-        
+     <div class="divider"></div>   
 
         <div class="program">
             <h2>Тайминги</h2>
@@ -390,16 +413,19 @@
             </div>
         </div>
 
+<div class="divider"></div>
+
         <div class="section-box">
             <h2>Дресс-код</h2>
             <p>Белый цвет мы оставляем исключительно для невесты. Для гостей женского пола просим выбрать наряды других оттенков. Мужчины могут выбрать классические белые рубашки.</p>
-            <p>Будем рады, если вы поддержите нашу цветовую гамму: натуральные (не кислотные) оттенки.</p>
+            <p>Синий цвет уже занят залом, поэтому можете выбирать теплые осенние оттенки, чтобы не сливаться с фоном. (Либо наоборот синий, чтобы стать незаметным ниндзя). Будем рады, если сделаете свой выбор в пользу спокойных оттенков</p>
             
             <div class="decorative-elements">
-                <div class="decor-element" style="background-color: #FFD8B8; color: #D4A373;">❤</div>
-                <div class="decor-element" style="background-color: #B5EAD7; color: #D4A373;">✿</div>
-                <div class="decor-element" style="background-color: #FFE5B4; color: #D4A373;">❁</div>
-                <div class="decor-element" style="background-color: #C7CEEA; color: #D4A373;">✽</div>
+                <div class="decor-element" style="background-color: #F0A29C; color: #C69666;">❤</div>
+                <div class="decor-element" style="background-color: #FFB266; color: #D4A373;">✿</div>
+                <div class="decor-element" style="background-color: #FFD3A6; color: #D4A373;">❁</div>
+                <div class="decor-element" style="background-color: #FFE5B4; color: #D4A373;">✽</div>
+		
             </div>
         </div>
 
@@ -409,7 +435,7 @@
     <h2>Детали</h2>
     <p>В качестве подарка будем рады вкладу в бюджет нашей семьи! Он точно поможет воплотить наши мечты в реальность.</p>
     
-    <p>А если захотите порадовать нас чем-то осязаемым - прекрасным выбором станет бутылочка вина этого года(жених просит не сухое, невеста выпьет любое). Будем открывать их на наши семейные юбилеи, вспоминая вас!</p>
+    <p>А если захотите порадовать нас чем-то осязаемым - прекрасным выбором станет бутылочка вина этого года(жених просит не сухое, невеста выпьет любое). Будем открывать их на наши семейные юбилеи, вспоминая вас! Просим дарить одну бутылку от семьи, т.к боимся спиться)))</p>
     
     <div class="flower-note" style="font-style: italic;">
         <p style="font-style: inherit">(Цветы, к сожалению, не лучшая идея - у жениха очень сильная аллергия. Ваше присутствие для нас важнее любых букетов) ❤️</p>
@@ -441,8 +467,15 @@
     <p>Если уже отправляли данные, повторять не нужно, но если случайно отправили дважды - ничего страшного! Спасибо!</p>
 </div>
 
+<!-- Форма (исправленная версия) -->
+
+    <div class="form-wrapper">
+
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9kWzGrZReZ3ErpYzDZVE1RimdaLlmPBIJ2fEUEgnT89MO-A/viewform?usp=dialog" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
         </div>
+
+    </div>
+
 
         <div class="divider"></div>
 
@@ -455,18 +488,19 @@
         <div class="section-box contacts">
             <h2>Контакты</h2>
             <p>По всем вопросам организации:</p>
+	    <p>(Все номера телефонов появятся за 7 дней до торжества)</p>
             
             <div class="contact-list">
                 <div class="contact-item">
-                    <span class="contact-name">Наталья</span>
-                    <span class="contact-role">(мама невесты, организатор)</span>
-                    <span class="contact-phone">+7 (926) 369-78-XX</span>
+                    <span class="contact-name">Елизавета</span>
+                    <span class="contact-role">(Координатор)</span>
+                    <span class="contact-phone">+7 (XXX) XXX-XX-XX</span>
                 </div>
                 
                 <div class="contact-item">
-                    <span class="contact-name">Елизавета</span>
-                    <span class="contact-role">(Координатор)</span>
-                    <span class="contact-phone">+7 (977) 916-12-XX</span>
+                    <span class="contact-name">Наталья</span>
+                    <span class="contact-role">(Мама невесты)</span>
+                    <span class="contact-phone">+7 (XXX) XXX-XX-XX</span>
                 </div>
                 
                 <div class="contact-item">
